@@ -1,22 +1,21 @@
-<title>{{Posting Title}}</title>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "JobPosting",
-  "title": "{{Title}}",
-  "description": "{{Description}}",
+  "title": {{Title | json}},
+  "description": {{Description | json}},
   "identifier": {
     "@type": "PropertyValue",
     "name": "SmartRecruitments",
     "value": "1234567"
   },
-  "datePosted": "{{datePosted}}",
+  "datePosted": {{datePosted | json}},
   "applicantLocationRequirements": {
     "@type": "Country",
-    "name": "{{applicantLocationRequirements}}"
+    "name": {{applicantLocationRequirements | json}}
   },
-  "jobLocationType": "{{jobLocationType}}",
-  "employmentType": "{{employmentType}}",
+  "jobLocationType": {{jobLocationType | json}},
+  "employmentType": {{employmentType | json}},
   "hiringOrganization": {
     "@type": "Organization",
     "name": "SmartRecruitments",
@@ -27,17 +26,17 @@
     "@type": "Place",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "{{City}}",
-      "addressRegion": "{{StateProvince}}",
-      "addressCountry": "{{Country}}"
+      "addressLocality": {{City | json}},
+      "addressRegion": {{StateProvince | json}},
+      "addressCountry": {{Country | json}}
     }
   },
   "baseSalary": {
     "@type": "MonetaryAmount",
-    "currency": "{{baseSalaryCurrency}}",
+    "currency": {{baseSalaryCurrency | json}},
     "value": {
       "@type": "QuantitativeValue",
-      "value": {{baseSalary}},
+      "value": {{baseSalary | json}},
       "unitText": "MONTH"
     }
   }
