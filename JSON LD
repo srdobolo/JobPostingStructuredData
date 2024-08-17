@@ -1,0 +1,45 @@
+<title>{{Posting Title}}</title>
+    <script type="application/ld+json">
+    {
+      "@context" : "https://smart-recruitments.com",
+      "@type" : "JobPosting",
+      "title" : "{{Title}}",
+      "description" : "{{Description}}",
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "SmartRecruitments",
+        "value": "1234567"
+      },
+      "datePosted" : "{{datePosted}}",
+      "applicantLocationRequirements": {
+        "@type": "Country",
+        "name": "{{applicantLocationRequirements}}"
+      },
+      "jobLocationType": "{{jobLocationType}}",
+      "employmentType" : "{{employmentType}}",
+      "hiringOrganization" : {
+        "@type" : "Organization",
+        "name" : "SmartRecruitments",
+        "sameAs" : "https://www.smart-recruitments.com",
+        "logo" : "https://framerusercontent.com/images/Z4KcBNbbNCdww7assUcUlcOHMz4.png?scale-down-to=512"
+      },   
+      "jobLocation": {
+      "@type": "Place",
+        "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "{{City}}",
+        "addressRegion": "{{State/Province}}",
+        "addressCountry": "{{Country}}"
+        }
+      },
+      "baseSalary": {
+        "@type": "MonetaryAmount",
+        "currency": "{{baseSalaryCurrency}}",
+        "value": {
+          "@type": "QuantitativeValue",
+          "value": {{BaseSalary}},
+          "unitText": "MONTH"
+        }
+      }
+    }
+    </script>
