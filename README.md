@@ -1,2 +1,3 @@
-# JobPostingStructuredData
-Structured Data for Job Posting Website
+# Structured Data From Framer Collection
+
+
