@@ -2,14 +2,10 @@
 {
   "@context": "https://schema.org",
   "@type": "JobPosting",
-  "title": {{Title | json}},
-  "description": {{Description | json}},
-  "identifier": {
-    "@type": "PropertyValue",
-    "name": "SmartRecruitments",
-    "value": "1234567"
-  },
+  "title": {{title | json}},
+  "description": {{description | json}},
   "datePosted": {{datePosted | json}},
+  "validThrough": {{validThrough | json}},
   "applicantLocationRequirements": {
     "@type": "Country",
     "name": {{applicantLocationRequirements | json}}
@@ -21,7 +17,7 @@
     "name": "SmartRecruitments",
     "sameAs": "https://www.smart-recruitments.com",
     "logo": "https://framerusercontent.com/images/Z4KcBNbbNCdww7assUcUlcOHMz4.png?scale-down-to=512"
-  },   
+  },
   "jobLocation": {
     "@type": "Place",
     "address": {
