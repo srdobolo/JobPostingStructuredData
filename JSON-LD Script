@@ -24,7 +24,8 @@
       "@type": "PostalAddress",
       "addressLocality": {{City | json}},
       "addressRegion": {{StateProvince | json}},
-      "addressCountry": {{Country | json}}
+      "addressCountry": {{Country | json}},
+      "postalCode": {{postalCode | json}}	
     }
   },
   "baseSalary": {
